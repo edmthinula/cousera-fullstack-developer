@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title>
+        <style>
+            *{
+                margin: 0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #f2f2f2;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .topic1,.topic2,.topic3{
+                float: right;
+                border: solid black 3px;
+                border-top: 0;
+                border-right: 0;
+            }
+            .topic1{
+                background-color: #4CAF50;
+            }
+            .topic{
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            .container{
+                width: 95%;
+                margin: auto;
+                margin-left: 5%
+                /* margin: 3% 1% 0 4%; */
+
+            }
+            p{
+                clear: right;
+                margin: auto;
+            }
+            .col-lg-4,.col-md-6,.col-sm-1{
+                background-color: #8d8c8c;
+                border: solid black 3px;
+                margin-bottom: 30px;
+                margin-right: 2%;
+            }
+            @media (min-width:992px){
+            .col-lg-4{
+                width: 30%;
+                float: left;
+                /* margin-right: 2%; */
+            }}
+            @media (max-width:767px){
+                div.col-sm-12{
+                    width: 100%;
+                }
+            }
+            @media ((min-width:768px) and (max-width:991px)){
+                .col-md-6{
+                    width: 45%;
+                    float: left;}
+                .col-md-6:nth-child(3){
+                    width: 92%;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 class="topic">Our Menu</h1>
+        <div class="container">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h1 class="topic1">
+                    chicken
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h1 class="topic2">
+                    Beef
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h1 class="topic3">
+                    sushi
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>
